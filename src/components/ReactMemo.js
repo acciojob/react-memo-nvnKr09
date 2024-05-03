@@ -1,4 +1,4 @@
-import React, { memo, useState } from 'react';
+import React, { useState } from 'react';
 
 function ReactMemo() {
 console.log('child rendered')
@@ -25,4 +25,4 @@ console.log('child rendered')
   )
 }
 
-export default memo(ReactMemo);
+export default React.memo(ReactMemo);

@@ -10,7 +10,7 @@ function UseMemo() {
     setCount((c) => c + 1);
   };
   const addTodo = () => {
-    setTodos((todo) => [...todo, "New todo"]);
+    setTodos((todo) => [...todo, "New Todo"]);
   };
 
   
