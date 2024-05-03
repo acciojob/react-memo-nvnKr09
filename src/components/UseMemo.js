@@ -1,4 +1,5 @@
 import React, { useMemo, useState } from "react";
+import ReactMemo from "./ReactMemo";
 
 function UseMemo() {
   const [count, setCount] = useState(0);
