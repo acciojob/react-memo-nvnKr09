@@ -25,9 +25,9 @@ function UseMemo() {
         <button id="add-todo-btn" onClick={addTodo}>Add Todo</button>
       </div>
       <hr />
-      <div>
+      <div id="incr-cnt">
         Count: {count}
-        <button id="incr-btn incr-cnt" onClick={increment}>0</button>
+        <button id="incr-btn" onClick={increment}>0</button>
         <h2>Expensive Calculation</h2>
         <p  id="calc">{calculation}</p>
       </div>
