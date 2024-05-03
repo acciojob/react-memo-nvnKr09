@@ -20,7 +20,7 @@ function UseMemo() {
       <div>
         <h2>My Todos</h2>
         {todos.map((todo, index) => {
-          return <p key={index}>{todo}</p>;
+          return <p id={`todo-${index}`} key={index}>{todo}</p>;
         })}
         <button id="add-todo-btn" onClick={addTodo}>Add Todo</button>
       </div>

@@ -2,19 +2,19 @@ import React, { memo, useState } from 'react';
 
 function ReactMemo() {
 console.log('child rendered')
-  const [todo, setTodo] = useState('');
+  const [input, setInput] = useState('');
   const [todos, setTodos] = useState([]);
 
   function handleAddSkill(){
-    if (todo.trim() !== '') {
-      setTodos([...todos, todo]);
+    if (input.trim() !== '' && input.length > 5) {
+      setTodos([...todos, input]);
     }
   }
 
   return (
     <>
       <h1>React.memo</h1>
-      <input id='skill-input' type="text" placeholder='Enter Skill...' value={todo} onChange={e => setTodo(e.target.value)} />
+      <input id='skill-input' type="text" placeholder='Enter Skill...' value={input} onChange={e => setInput(e.target.value)} />
       <button onClick={handleAddSkill}>Add Skill</button>
       <ul>
         {todos.map((todo, index) => {
