@@ -14,7 +14,7 @@ console.log('child rendered')
   return (
     <>
       <h1>React.memo</h1>
-      <input type="text" placeholder='Enter Skill...' value={todo} onChange={e => setTodo(e.target.value)} />
+      <input id='skill-input' type="text" placeholder='Enter Skill...' value={todo} onChange={e => setTodo(e.target.value)} />
       <button onClick={handleAddSkill}>Add Skill</button>
       <ul>
         {todos.map((todo, index) => {
